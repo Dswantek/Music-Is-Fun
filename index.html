@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cloud-It-Up</title>
+    <title>CloudGramm</title>
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="parallax">
     <div class="container heading text-center">
         <div class="row">
             <div class="col-xs-12 title-heading">
-                Music is Life
+                CloudGramm
             </div>
             <div class="col-xs-12">
                 <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                     <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                        <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                            </div>
+                            <div class="col-xs-12">
+                                <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -36,7 +42,7 @@
     <div class="row text-center">
         <div class="col-xs-6">
             <h2 class="heading">Your Playlist</h2>
-            <div id="playlist" class-"row"></div>
+            <div id="playlist" class="row"></div>
         </div>
         <div class="col-xs-6">
             <h2 class="heading">Search Results</h2>
